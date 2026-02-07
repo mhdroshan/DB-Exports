@@ -306,6 +306,9 @@ img {
 .header.scrolled .nav-links a {
     color: var(--text-dark);
 }
+.header.scrolled .nav-links a.active {
+    color: var(--primary-color);
+}
 
 .nav-links a:hover,
 .nav-links a.active {
@@ -644,6 +647,11 @@ footer {
     color: #bbb;
     line-height: 1.6;
     margin-bottom: 15px;
+}
+.footer-col.links-col ul{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
 }
 
 .footer-socials {
@@ -1061,7 +1069,6 @@ footer {
         color: var(--text-dark);
     }
 }
-
 
 .mobile-close-btn {
     display: none;
