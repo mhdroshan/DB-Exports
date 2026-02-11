@@ -578,7 +578,7 @@ img {
 
 /* Certifications */
 .certifications {
-    background-color: var(--primary-color);
+    background-color: #a47ec754;
     padding: 40px 0;
     color: var(--white);
 }
@@ -594,9 +594,6 @@ img {
 .cert-icon {
     height: 60px;
     width: auto;
-    opacity: 0.8;
-    transition: var(--transition);
-    filter: brightness(0) invert(1);
     /* Ensure white if SVG isn't perfectly white */
 }
 
@@ -769,11 +766,26 @@ footer {
     box-shadow: var(--shadow);
 }
 
+.spiceBin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.spiceBin img{
+    height: 60px;
+}
+
 /* Mission Vision */
 .mv-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .mv-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
 }
 
 .mv-card {
@@ -1126,7 +1138,7 @@ footer {
 
 .founder-image img {
     width: 100%;
-    max-width: 350px;
+    max-width: 370px;
     border-radius: 10px;
     box-shadow: var(--shadow);
 }
