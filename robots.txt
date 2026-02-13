@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dbexportglobal.com/sitemap.xml
